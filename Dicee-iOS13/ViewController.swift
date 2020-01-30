@@ -19,8 +19,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     @IBAction func rollButtonPressed(_ sender: UIButton) {
-        print(diceArray.count);
-        diceImageView1.image = diceArray[Int.random(in: 0...diceArray.count)];
+        diceImageView1.image = diceArray[Int.random(in: 0..<diceArray.count)];
         diceImageView2.image = diceArray.randomElement();
     }
 }
